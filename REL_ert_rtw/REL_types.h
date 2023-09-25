@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.131
+ * Model version                  : 1.139
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Sep 25 19:05:16 2023
+ * C/C++ source code generated on : Mon Sep 25 19:55:02 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -55,6 +55,18 @@ typedef uint8_T HndPos_Sts_E;
 #define Hnd_Unfold                     ((HndPos_Sts_E)1U)
 #define Hnd_Half_Unfold                ((HndPos_Sts_E)2U)
 #define Hnd_Error                      ((HndPos_Sts_E)3U)
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_Child_Sts_E_
+#define DEFINED_TYPEDEF_FOR_Child_Sts_E_
+
+typedef uint8_T Child_Sts_E;
+
+/* enum Child_Sts_E */
+#define Child_Unlock                   ((Child_Sts_E)0U)         /* Default value */
+#define Child_Lock                     ((Child_Sts_E)1U)
+#define Child_SuperLock                ((Child_Sts_E)2U)
+#define Child_Unknown                  ((Child_Sts_E)3U)
 #endif
 
 #ifndef DEFINED_TYPEDEF_FOR_Rat_Sts_E_
