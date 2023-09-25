@@ -1,0 +1,2492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model REL
+Model version                : 1.142
+Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
+XML source code generated on : Mon Sep 25 20:50:37 2023
+Model Checksum               : 762921179 1503696352 4015683125 2214767522
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="9bcc9b1e-b8f9-4102-8093-f59a91529a9b">
+                    <SHORT-NAME>REL</SHORT-NAME>
+                    <PORTS>
+                        <R-PORT-PROTOTYPE UUID="44b2f918-fb62-41fe-9e26-61dc7a03ccb6">
+                            <SHORT-NAME>VeINP_CAN_PowerMode_sig</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeINP_CAN_PowerMode_sig/VeINP_CAN_PowerMode_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeINP_CAN_PowerMode_sig</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b90a2898-0d86-49a9-9a22-53bd1d88ce2e">
+                            <SHORT-NAME>VbOUT_SP_FLDoorAjarSts_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_FLDoorAjarSts_flg/VbOUT_SP_FLDoorAjarSts_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_SP_FLDoorAjarSts_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="4268b0b3-2a84-4c51-9a66-0cf5f3434c5f">
+                            <SHORT-NAME>VbOUT_SP_RLDoorAjarSts_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_RLDoorAjarSts_flg/VbOUT_SP_RLDoorAjarSts_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_SP_RLDoorAjarSts_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b1652376-5820-44a9-8c0b-04df7a42ef94">
+                            <SHORT-NAME>VbINP_HWA_FLDoorButton_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_FLDoorButton_flg/VbINP_HWA_FLDoorButton_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbINP_HWA_FLDoorButton_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="3bec3572-2703-4877-ae37-bab4b6892be6">
+                            <SHORT-NAME>VbINP_HWA_RLDoorButton_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_RLDoorButton_flg/VbINP_HWA_RLDoorButton_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbINP_HWA_RLDoorButton_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a85a38d2-5351-496c-836d-a12aa35964b9">
+                            <SHORT-NAME>VbINP_HWA_FLDoorHandleSW_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_FLDoorHandleSW_flg/VbINP_HWA_FLDoorHandleSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbINP_HWA_FLDoorHandleSW_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="635da03a-7d4b-472c-8741-36d3a7d47c16">
+                            <SHORT-NAME>VbINP_HWA_RLDoorHandleSW_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_RLDoorHandleSW_flg/VbINP_HWA_RLDoorHandleSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbINP_HWA_RLDoorHandleSW_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="520c6900-3e7b-46da-8049-766ce806b4b7">
+                            <SHORT-NAME>VmOUT_DLK_LockSrc_enum</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VmOUT_DLK_LockSrc_enum/VmOUT_DLK_LockSrc_enum</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VmOUT_DLK_LockSrc_enum</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="3fea5767-3937-4f25-a916-2f0cfc9b5db4">
+                            <SHORT-NAME>VbOUT_DLK_FLUnlock_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_DLK_FLUnlock_flg/VbOUT_DLK_FLUnlock_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_DLK_FLUnlock_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="1cda1cf9-8ea0-43d5-a459-08ea50a955e1">
+                            <SHORT-NAME>VbOUT_DLK_RLUnlock_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_DLK_RLUnlock_flg/VbOUT_DLK_RLUnlock_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_DLK_RLUnlock_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="967fdf3f-0c94-4280-b065-1a0bdb3b49d8">
+                            <SHORT-NAME>VeOUT_SP_EspVehSpd_kmh</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_SP_EspVehSpd_kmh/VeOUT_SP_EspVehSpd_kmh</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_SP_EspVehSpd_kmh</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="e1e446c3-fafa-4ed2-8044-ae58eff0ae40">
+                            <SHORT-NAME>VbINP_CAN_EspVehSpdVld_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_CAN_EspVehSpdVld_flg/VbINP_CAN_EspVehSpdVld_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbINP_CAN_EspVehSpdVld_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="009ccc91-228b-471d-837c-6a1d8a0930ae">
+                            <SHORT-NAME>VbOUT_SP_CrashOutpSts_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_CrashOutpSts_flg/VbOUT_SP_CrashOutpSts_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_SP_CrashOutpSts_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="07b924fa-09c3-4420-abc8-cf8518725801">
+                            <SHORT-NAME>VeINP_HWA_LRChildrenProtectSwitch_sig</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeINP_HWA_LRChildrenProtectSwitch_sig/VeINP_HWA_LRChildrenProtectSwitch_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeINP_HWA_LRChildrenProtectSwitch_sig</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="f5d85b84-6003-4011-b7ce-734c70852978">
+                            <SHORT-NAME>VbOUT_HWA_FLDoorFullOpen_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_HWA_FLDoorFullOpen_flg/VbOUT_HWA_FLDoorFullOpen_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_HWA_FLDoorFullOpen_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="91d76a6d-8ecc-4a0f-9f9d-15860936247b">
+                            <SHORT-NAME>VbOUT_HWA_RLDoorFullOpen_flg</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_HWA_RLDoorFullOpen_flg/VbOUT_HWA_RLDoorFullOpen_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_HWA_RLDoorFullOpen_flg</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="c4140ec3-79d0-4c84-ac91-d5cdb33c650d">
+                            <SHORT-NAME>VeOUT_DLK_LHFDoorLockSts_sig</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_DLK_LHFDoorLockSts_sig/VeOUT_DLK_LHFDoorLockSts_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_DLK_LHFDoorLockSts_sig</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a76e9c88-c4ad-4acb-a88f-54521f584607">
+                            <SHORT-NAME>VeOUT_DLK_LHRDoorLockSts_sig</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_DLK_LHRDoorLockSts_sig/VeOUT_DLK_LHRDoorLockSts_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_DLK_LHRDoorLockSts_sig</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="eb6ed3f9-33bd-4952-9c30-c8b3f0bc39fc">
+                            <SHORT-NAME>VbOUT_REL_FLLockReleaseInsdSW_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLLockReleaseInsdSW_flg/VbOUT_REL_FLLockReleaseInsdSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLLockReleaseInsdSW_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="50f632e4-fdda-403b-ac8e-d8a360ca0c00">
+                            <SHORT-NAME>VbOUT_REL_FLLockReleaseOutsdSW_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLLockReleaseOutsdSW_flg/VbOUT_REL_FLLockReleaseOutsdSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLLockReleaseOutsdSW_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="b16a0939-ddfb-477b-b8ef-1fe1fcad7762">
+                            <SHORT-NAME>VbOUT_REL_FLDoorOpenSwitch_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorOpenSwitch_flg/VbOUT_REL_FLDoorOpenSwitch_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLDoorOpenSwitch_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="e72cfe71-9ad4-4f2e-a6dd-1a525f996a71">
+                            <SHORT-NAME>VbOUT_REL_FLDoorAjarSwitch_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorAjarSwitch_flg/VbOUT_REL_FLDoorAjarSwitch_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLDoorAjarSwitch_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="7011bf5c-5262-4cca-a019-e92821b70893">
+                            <SHORT-NAME>VeOUT_REL_FLReleaseLatchStatus_sig</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_FLReleaseLatchStatus_sig/VeOUT_REL_FLReleaseLatchStatus_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_REL_FLReleaseLatchStatus_sig</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="d676c050-9819-4a9a-b0a3-8d77ddd29e0f">
+                            <SHORT-NAME>VbOUT_REL_RLLockReleaseInsdSW_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLLockReleaseInsdSW_flg/VbOUT_REL_RLLockReleaseInsdSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLLockReleaseInsdSW_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="5cef087c-721e-41cd-a100-3bc83aa10416">
+                            <SHORT-NAME>VbOUT_REL_RLLockReleaseOutsdSW_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLLockReleaseOutsdSW_flg/VbOUT_REL_RLLockReleaseOutsdSW_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLLockReleaseOutsdSW_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="3788cf24-a3f4-401d-a910-839d8e7f263a">
+                            <SHORT-NAME>VbOUT_REL_RLDoorOpenSwitch_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorOpenSwitch_flg/VbOUT_REL_RLDoorOpenSwitch_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLDoorOpenSwitch_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="477b035d-176d-4c37-95d3-affe18ca788f">
+                            <SHORT-NAME>VbOUT_REL_RLDoorAjarSwitch_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorAjarSwitch_flg/VbOUT_REL_RLDoorAjarSwitch_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLDoorAjarSwitch_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="b920e4bb-2f6f-4aa4-8e20-c85aaf177fd1">
+                            <SHORT-NAME>VeOUT_REL_RLChildrenProtectSwitch_sig</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_RLChildrenProtectSwitch_sig/VeOUT_REL_RLChildrenProtectSwitch_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_REL_RLChildrenProtectSwitch_sig</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="d1dec2a7-fe54-4da7-afb5-06cad8c57764">
+                            <SHORT-NAME>VeOUT_REL_RLReleaseLatchStatus_sig</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_RLReleaseLatchStatus_sig/VeOUT_REL_RLReleaseLatchStatus_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_REL_RLReleaseLatchStatus_sig</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="b1b885ef-4016-4366-bb06-03af1331d93d">
+                            <SHORT-NAME>VeOUT_REL_HandleSwitchStsFL_sig</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_HandleSwitchStsFL_sig/VeOUT_REL_HandleSwitchStsFL_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_REL_HandleSwitchStsFL_sig</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="31f27d14-0219-4971-b4e7-d7c065d42a21">
+                            <SHORT-NAME>VeOUT_REL_HandleSwitchStsRR_sig</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_HandleSwitchStsRR_sig/VeOUT_REL_HandleSwitchStsRR_sig</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VeOUT_REL_HandleSwitchStsRR_sig</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="5eee5314-8b81-4f3a-bdb9-96f3a32171fb">
+                            <SHORT-NAME>VbOUT_REL_FLDoorMotorA_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorA_flg/VbOUT_REL_FLDoorMotorA_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLDoorMotorA_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="488f48b8-23c5-4381-8494-daf8ea59af7d">
+                            <SHORT-NAME>VbOUT_REL_FLDoorMotorB_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorB_flg/VbOUT_REL_FLDoorMotorB_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_FLDoorMotorB_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="c38e8236-d417-4392-956f-6092c426af17">
+                            <SHORT-NAME>VbOUT_REL_RLDoorMotorA_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorA_flg/VbOUT_REL_RLDoorMotorA_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLDoorMotorA_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="108b9182-2e7c-4072-8f66-b47b241d172e">
+                            <SHORT-NAME>VbOUT_REL_RLDoorMotorB_flg</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorB_flg/VbOUT_REL_RLDoorMotorB_flg</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                                            <CATEGORY>BOOLEAN</CATEGORY>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                                <SW-VALUES-PHYS>
+                                                    <VT>FALSE</VT>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/VbOUT_REL_RLDoorMotorB_flg</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="50798d51-42d3-456c-a816-8a43f80c8a65">
+                            <SHORT-NAME>REL</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/DataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <EVENTS>
+                                <INIT-EVENT UUID="66e64a04-a9ad-467d-995b-154f3de9cfca">
+                                    <SHORT-NAME>REL_InitEvent</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/REL/REL/REL_Init</START-ON-EVENT-REF>
+                                </INIT-EVENT>
+                                <TIMING-EVENT UUID="eefbe16f-6ffb-4e1c-824b-8aa9c1e7ee63">
+                                    <SHORT-NAME>Event_Runnable_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/REL/REL/REL_Step</START-ON-EVENT-REF>
+                                    <PERIOD>0.01</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="cffe46f7-3442-4c2d-bbdb-04b32b9fafbb">
+                                    <SHORT-NAME>REL_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-SEND-POINTS>
+                                        <VARIABLE-ACCESS UUID="f573d331-bb8d-56bb-b446-dd919c331aa3">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorMotorA_flg_VbOUT_REL_FLDoorMotorA_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorMotorA_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorA_flg/VbOUT_REL_FLDoorMotorA_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="ffbd6eb9-927a-5d12-3189-922299d03a37">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorMotorB_flg_VbOUT_REL_FLDoorMotorB_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorMotorB_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorB_flg/VbOUT_REL_FLDoorMotorB_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="b00e1b1b-2026-5350-b4f0-2649b03b40a0">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorMotorA_flg_VbOUT_REL_RLDoorMotorA_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorMotorA_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorA_flg/VbOUT_REL_RLDoorMotorA_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="5768eef3-f679-506a-8dc2-2556e04aa547">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorMotorB_flg_VbOUT_REL_RLDoorMotorB_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorMotorB_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorB_flg/VbOUT_REL_RLDoorMotorB_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-SEND-POINTS>
+                                    <SYMBOL>REL_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="8c241a98-171f-479e-8561-e003ff068de8">
+                                    <SHORT-NAME>REL_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                        <VARIABLE-ACCESS UUID="bf4c5b7a-0243-5c1c-f901-c7c3b36d4165">
+                                            <SHORT-NAME>IN_VbINP_CAN_EspVehSpdVld_flg_VbINP_CAN_EspVehSpdVld_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbINP_CAN_EspVehSpdVld_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_CAN_EspVehSpdVld_flg/VbINP_CAN_EspVehSpdVld_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="36e8ea12-b810-59d6-b1ce-bca5edf32139">
+                                            <SHORT-NAME>IN_VbINP_HWA_FLDoorButton_flg_VbINP_HWA_FLDoorButton_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbINP_HWA_FLDoorButton_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_FLDoorButton_flg/VbINP_HWA_FLDoorButton_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="c795c077-3a8c-5c5f-0510-43c494beb731">
+                                            <SHORT-NAME>IN_VbINP_HWA_FLDoorHandleSW_flg_VbINP_HWA_FLDoorHandleSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbINP_HWA_FLDoorHandleSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_FLDoorHandleSW_flg/VbINP_HWA_FLDoorHandleSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="d3bffe9d-db8d-598c-5cfd-2246b2872a99">
+                                            <SHORT-NAME>IN_VbINP_HWA_RLDoorButton_flg_VbINP_HWA_RLDoorButton_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbINP_HWA_RLDoorButton_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_RLDoorButton_flg/VbINP_HWA_RLDoorButton_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="c6ff7764-d8bb-5612-eb4a-db22a4afa03f">
+                                            <SHORT-NAME>IN_VbINP_HWA_RLDoorHandleSW_flg_VbINP_HWA_RLDoorHandleSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbINP_HWA_RLDoorHandleSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbINP_HWA_RLDoorHandleSW_flg/VbINP_HWA_RLDoorHandleSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2f891d96-dbec-58cf-5402-515360980547">
+                                            <SHORT-NAME>IN_VbOUT_HWA_FLDoorFullOpen_flg_VbOUT_HWA_FLDoorFullOpen_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbOUT_HWA_FLDoorFullOpen_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_HWA_FLDoorFullOpen_flg/VbOUT_HWA_FLDoorFullOpen_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="0f91b0ba-94b8-5ed0-a472-741faf349bb8">
+                                            <SHORT-NAME>IN_VbOUT_HWA_RLDoorFullOpen_flg_VbOUT_HWA_RLDoorFullOpen_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbOUT_HWA_RLDoorFullOpen_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_HWA_RLDoorFullOpen_flg/VbOUT_HWA_RLDoorFullOpen_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2c68d9e1-7852-5ec4-69c6-8c56d7bb7e26">
+                                            <SHORT-NAME>IN_VbOUT_SP_CrashOutpSts_flg_VbOUT_SP_CrashOutpSts_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbOUT_SP_CrashOutpSts_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_CrashOutpSts_flg/VbOUT_SP_CrashOutpSts_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="d73dc0b0-8c19-5d9a-b413-ea4b0423dfbc">
+                                            <SHORT-NAME>IN_VbOUT_SP_FLDoorAjarSts_flg_VbOUT_SP_FLDoorAjarSts_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbOUT_SP_FLDoorAjarSts_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_FLDoorAjarSts_flg/VbOUT_SP_FLDoorAjarSts_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2e587370-f7d4-5e2c-6b39-cad1ae0abd02">
+                                            <SHORT-NAME>IN_VbOUT_SP_RLDoorAjarSts_flg_VbOUT_SP_RLDoorAjarSts_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VbOUT_SP_RLDoorAjarSts_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_SP_RLDoorAjarSts_flg/VbOUT_SP_RLDoorAjarSts_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="a7c74988-0f9d-5875-d266-4a90daee263f">
+                                            <SHORT-NAME>IN_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VeINP_CAN_PowerMode_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeINP_CAN_PowerMode_sig/VeINP_CAN_PowerMode_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="ab2f7933-005d-5d08-48bd-fd80eafd7087">
+                                            <SHORT-NAME>IN_VeINP_HWA_LRChildrenProtectSwitch_sig_VeINP_HWA_LRChildrenProtectSwitch_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VeINP_HWA_LRChildrenProtectSwitch_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeINP_HWA_LRChildrenProtectSwitch_sig/VeINP_HWA_LRChildrenProtectSwitch_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="db7758f4-7ad9-5754-da3d-d3e53ea167aa">
+                                            <SHORT-NAME>IN_VeOUT_DLK_LHFDoorLockSts_sig_VeOUT_DLK_LHFDoorLockSts_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VeOUT_DLK_LHFDoorLockSts_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_DLK_LHFDoorLockSts_sig/VeOUT_DLK_LHFDoorLockSts_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="5b21dbcf-ba55-5d37-dac3-fc26745f41cd">
+                                            <SHORT-NAME>IN_VeOUT_DLK_LHRDoorLockSts_sig_VeOUT_DLK_LHRDoorLockSts_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VeOUT_DLK_LHRDoorLockSts_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_DLK_LHRDoorLockSts_sig/VeOUT_DLK_LHRDoorLockSts_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="23f735ea-10e1-56cf-3e9c-f852746e4053">
+                                            <SHORT-NAME>IN_VeOUT_SP_EspVehSpd_kmh_VeOUT_SP_EspVehSpd_kmh</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/REL/VeOUT_SP_EspVehSpd_kmh</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_SP_EspVehSpd_kmh/VeOUT_SP_EspVehSpd_kmh</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                    <DATA-SEND-POINTS>
+                                        <VARIABLE-ACCESS UUID="3d44989e-11c8-5570-4044-27ad91e342af">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLLockReleaseInsdSW_flg_VbOUT_REL_FLLockReleaseInsdSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLLockReleaseInsdSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLLockReleaseInsdSW_flg/VbOUT_REL_FLLockReleaseInsdSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2b40ea84-08cd-5611-7c42-c10baee260c3">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLLockReleaseOutsdSW_flg_VbOUT_REL_FLLockReleaseOutsdSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLLockReleaseOutsdSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLLockReleaseOutsdSW_flg/VbOUT_REL_FLLockReleaseOutsdSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="abce135b-edc6-5aca-a0dd-1234d2c08da9">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorOpenSwitch_flg_VbOUT_REL_FLDoorOpenSwitch_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorOpenSwitch_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorOpenSwitch_flg/VbOUT_REL_FLDoorOpenSwitch_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="6542409d-934b-54c6-f08d-e9a6c790ca55">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorAjarSwitch_flg_VbOUT_REL_FLDoorAjarSwitch_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorAjarSwitch_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorAjarSwitch_flg/VbOUT_REL_FLDoorAjarSwitch_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2845c8c6-58f8-5e21-f11f-fe8fef1a6107">
+                                            <SHORT-NAME>OUT_VeOUT_REL_FLReleaseLatchStatus_sig_VeOUT_REL_FLReleaseLatchStatus_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VeOUT_REL_FLReleaseLatchStatus_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_FLReleaseLatchStatus_sig/VeOUT_REL_FLReleaseLatchStatus_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="5e0a19dd-40e7-5781-5170-701ff53a9465">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLLockReleaseInsdSW_flg_VbOUT_REL_RLLockReleaseInsdSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLLockReleaseInsdSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLLockReleaseInsdSW_flg/VbOUT_REL_RLLockReleaseInsdSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="994a481b-0eff-5a27-e85b-1fe9b29388df">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLLockReleaseOutsdSW_flg_VbOUT_REL_RLLockReleaseOutsdSW_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLLockReleaseOutsdSW_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLLockReleaseOutsdSW_flg/VbOUT_REL_RLLockReleaseOutsdSW_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="bf73edce-8f48-5688-0eed-6304f32e6bf9">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorOpenSwitch_flg_VbOUT_REL_RLDoorOpenSwitch_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorOpenSwitch_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorOpenSwitch_flg/VbOUT_REL_RLDoorOpenSwitch_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="80289b93-8ff4-5058-7717-7060622b41f3">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorAjarSwitch_flg_VbOUT_REL_RLDoorAjarSwitch_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorAjarSwitch_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorAjarSwitch_flg/VbOUT_REL_RLDoorAjarSwitch_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="51d4f437-fca2-5c19-d853-64cc4b37da59">
+                                            <SHORT-NAME>OUT_VeOUT_REL_RLChildrenProtectSwitch_sig_VeOUT_REL_RLChildrenProtectSwitch_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VeOUT_REL_RLChildrenProtectSwitch_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_RLChildrenProtectSwitch_sig/VeOUT_REL_RLChildrenProtectSwitch_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="eb72fefc-f529-5502-9ff2-bc04cd007f56">
+                                            <SHORT-NAME>OUT_VeOUT_REL_RLReleaseLatchStatus_sig_VeOUT_REL_RLReleaseLatchStatus_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VeOUT_REL_RLReleaseLatchStatus_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_RLReleaseLatchStatus_sig/VeOUT_REL_RLReleaseLatchStatus_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="e2e7fc44-a4ca-5a49-1fdc-7924ed5d3866">
+                                            <SHORT-NAME>OUT_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VeOUT_REL_HandleSwitchStsFL_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_HandleSwitchStsFL_sig/VeOUT_REL_HandleSwitchStsFL_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="67b4fb56-21d1-5e5a-209c-7d2fc9ee7099">
+                                            <SHORT-NAME>OUT_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VeOUT_REL_HandleSwitchStsRR_sig</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VeOUT_REL_HandleSwitchStsRR_sig/VeOUT_REL_HandleSwitchStsRR_sig</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="7addf07c-350e-58ca-25b2-89ad97e4a0db">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorMotorA_flg_VbOUT_REL_FLDoorMotorA_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorMotorA_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorA_flg/VbOUT_REL_FLDoorMotorA_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="530ab406-1f2b-549d-681a-bacec4902a99">
+                                            <SHORT-NAME>OUT_VbOUT_REL_FLDoorMotorB_flg_VbOUT_REL_FLDoorMotorB_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_FLDoorMotorB_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_FLDoorMotorB_flg/VbOUT_REL_FLDoorMotorB_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="f47488e4-5df8-5e13-b977-ffdae0b3396c">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorMotorA_flg_VbOUT_REL_RLDoorMotorA_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorMotorA_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorA_flg/VbOUT_REL_RLDoorMotorA_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="23ea112b-580c-5d4d-25e2-2bdd026791fe">
+                                            <SHORT-NAME>OUT_VbOUT_REL_RLDoorMotorB_flg_VbOUT_REL_RLDoorMotorB_flg</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/REL/VbOUT_REL_RLDoorMotorB_flg</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/VbOUT_REL_RLDoorMotorB_flg/VbOUT_REL_RLDoorMotorB_flg</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-SEND-POINTS>
+                                    <SYMBOL>REL_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>DataTypes</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-RECORD-DATA-TYPE UUID="da3700a1-b7ec-4742-8b27-ee42c83c1177">
+                            <SHORT-NAME>TURN_DIAG_STRUCT</SHORT-NAME>
+                            <CATEGORY>STRUCTURE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <ELEMENTS>
+                                <APPLICATION-RECORD-ELEMENT UUID="74eabd67-ac0a-40c4-b16a-92cc667c6f24">
+                                    <SHORT-NAME>OpenLoad</SHORT-NAME>
+                                    <CATEGORY>BOOLEAN</CATEGORY>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                                </APPLICATION-RECORD-ELEMENT>
+                                <APPLICATION-RECORD-ELEMENT UUID="adc4de32-32df-48d6-af73-50180d83edcd">
+                                    <SHORT-NAME>Overload</SHORT-NAME>
+                                    <CATEGORY>BOOLEAN</CATEGORY>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                                </APPLICATION-RECORD-ELEMENT>
+                                <APPLICATION-RECORD-ELEMENT UUID="d8045153-400c-472d-9752-06be5b1735c9">
+                                    <SHORT-NAME>NormA2D</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                                </APPLICATION-RECORD-ELEMENT>
+                                <APPLICATION-RECORD-ELEMENT UUID="df61e474-54b4-4739-9df1-df6478f6a0d5">
+                                    <SHORT-NAME>Turn_LTH</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                                </APPLICATION-RECORD-ELEMENT>
+                                <APPLICATION-RECORD-ELEMENT UUID="16269807-68d0-4ecb-aa1a-605490bbc865">
+                                    <SHORT-NAME>TurnCalib_th</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                                </APPLICATION-RECORD-ELEMENT>
+                            </ELEMENTS>
+                        </APPLICATION-RECORD-DATA-TYPE>
+                        <APPLICATION-ARRAY-DATA-TYPE UUID="637fe967-81f6-4266-ae74-31fa2b092a88">
+                            <SHORT-NAME>rt_Array_UInt8_8</SHORT-NAME>
+                            <CATEGORY>ARRAY</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <ELEMENT>
+                                <SHORT-NAME>rt_Array_UInt8_8</SHORT-NAME>
+                                <CATEGORY>VALUE</CATEGORY>
+                                <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                                <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                <MAX-NUMBER-OF-ELEMENTS>8</MAX-NUMBER-OF-ELEMENTS>
+                            </ELEMENT>
+                        </APPLICATION-ARRAY-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a4a627f1-41ec-4329-9028-f9e5b61a6074">
+                            <SHORT-NAME>Boolean</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/COMPU_Boolean</COMPU-METHOD-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="1628f011-fde9-46b1-92c0-d3531c37cf7b">
+                            <SHORT-NAME>UInt8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_UInt8</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="383b491c-cee0-4ef6-a7d5-8cb4fd75c1b0">
+                            <SHORT-NAME>SInt8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_SInt8</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="3318a701-ee9c-4f21-b665-11973744f61b">
+                            <SHORT-NAME>UInt16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_UInt16</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="bea88a87-0b9f-4096-a297-e97bdbbfd59b">
+                            <SHORT-NAME>SInt16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_SInt16</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="e2cd1b25-761c-459e-af0f-44a5760d86df">
+                            <SHORT-NAME>UInt32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_UInt32</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="10dd4ac9-2303-4b5d-809e-2be9d281110d">
+                            <SHORT-NAME>SInt32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplicationDataTypes/DataConstrs/DC_SInt32</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataConstrs</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-CONSTR UUID="66119507-e847-4acb-8ba6-19ed0a8cbf35">
+                                    <SHORT-NAME>DC_UInt8</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="5543292a-1871-4148-86f9-b9cd12a37b84">
+                                    <SHORT-NAME>DC_SInt8</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="ba1d6e6a-7d5b-45f7-8cd1-eeef040345fc">
+                                    <SHORT-NAME>DC_UInt16</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="8ee61757-c2f6-4d55-91cc-10bdedaa971c">
+                                    <SHORT-NAME>DC_SInt16</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="803236f6-05a7-4444-8356-c31d8bc7734c">
+                                    <SHORT-NAME>DC_UInt32</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="77da2ff3-3314-4da0-9262-827d8b082887">
+                                    <SHORT-NAME>DC_SInt32</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPU-METHOD UUID="5e29de55-ff01-413b-8689-2cc159e6afcf">
+                            <SHORT-NAME>COMPU_Boolean</SHORT-NAME>
+                            <CATEGORY>TEXTTABLE</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                            <COMPU-INTERNAL-TO-PHYS>
+                                <COMPU-SCALES>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>FALSE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>TRUE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                </COMPU-SCALES>
+                            </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                        <COMPU-METHOD UUID="ab7ba33f-0acf-434f-b726-fcd49ddfdd62">
+                            <SHORT-NAME>Identcl</SHORT-NAME>
+                            <CATEGORY>IDENTICAL</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                        </COMPU-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>DataTypeMappings</SHORT-NAME>
+                    <ELEMENTS>
+                        <DATA-TYPE-MAPPING-SET UUID="1b37b051-1744-42f5-a852-531a583ba4fc">
+                            <SHORT-NAME>DataTypeMappingsSet</SHORT-NAME>
+                            <DATA-TYPE-MAPS>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/Boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/SInt8</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/SInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt16</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/SInt16</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/SInt16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt32</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/SInt32</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/SInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/DataTypes/ApplicationDataTypes/TURN_DIAG_STRUCT</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/TURN_DIAG_STRUCT</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/DataTypes/ApplicationDataTypes/rt_Array_UInt8_8</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/rt_Array_UInt8_8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                            </DATA-TYPE-MAPS>
+                        </DATA-TYPE-MAPPING-SET>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE UUID="62fdd305-ac0a-4e85-a5c7-dafa8bf72ff0">
+                            <SHORT-NAME>TURN_DIAG_STRUCT</SHORT-NAME>
+                            <CATEGORY>STRUCTURE</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7a2604a1-010f-428d-a1a3-6cc7c03abc25">
+                                    <SHORT-NAME>OpenLoad</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/Boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="693ddcbe-1be9-4b9e-856d-cb7669f63658">
+                                    <SHORT-NAME>Overload</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/Boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="207d3b85-0267-4b95-9d33-dd882c6d8582">
+                                    <SHORT-NAME>NormA2D</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="f8cfffae-5bff-4769-852f-04ef83540dc5">
+                                    <SHORT-NAME>Turn_LTH</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="4df9a3f4-6240-4137-b0a0-b32e4b50be96">
+                                    <SHORT-NAME>TurnCalib_th</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="8e69272d-9fe8-4a1d-a03e-478d24d047d1">
+                            <SHORT-NAME>rt_Array_UInt8_8</SHORT-NAME>
+                            <CATEGORY>ARRAY</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="d96e1bea-e06c-51d0-ce3c-db345cdcc9a7">
+                                    <SHORT-NAME>rt_Array_UInt8_8</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <ARRAY-SIZE>8</ARRAY-SIZE>
+                                    <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/UInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="3b624897-60ba-4b14-a513-f26971299bd7">
+                            <SHORT-NAME>Boolean</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/boolean</BASE-TYPE-REF>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/COMPU_Boolean</COMPU-METHOD-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="d9b5167e-7314-4d29-9765-b965ae686124">
+                            <SHORT-NAME>UInt8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="a9f90cb7-260d-415c-8678-bb9e503e1f48">
+                            <SHORT-NAME>SInt8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/sint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="5b5c3e12-75ce-4c37-b544-b2d93177177b">
+                            <SHORT-NAME>UInt16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="f1be6a7a-1e96-48ec-a201-2ffdfa0afdc7">
+                            <SHORT-NAME>SInt16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/sint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="9df910fb-f3d5-4710-8493-2879ecece3d2">
+                            <SHORT-NAME>UInt32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="f3fbef5b-2025-4deb-a1cd-aba6bf565706">
+                            <SHORT-NAME>SInt32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/sint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-ADDR-METHOD UUID="f3329576-6ae6-48fe-b822-4fcef25a158e">
+                            <SHORT-NAME>CODE</SHORT-NAME>
+                            <SECTION-TYPE>CODE</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="00fc9de3-1ac8-4fa2-9d08-4173fc07b10c">
+                            <SHORT-NAME>CONST</SHORT-NAME>
+                            <SECTION-TYPE>CONST</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="9144b206-7e5d-4b36-aaf5-fb74eae34fc0">
+                            <SHORT-NAME>VAR</SHORT-NAME>
+                            <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE UUID="85309da6-20e6-4f13-a239-278b9264eb70">
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="451ae973-1672-4d96-b324-3871358a1b19">
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="75b08806-23de-4d47-858d-1882878e35c4">
+                            <SHORT-NAME>sint8</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint8</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="a9345ba9-b291-4f85-9e48-1d911bd09663">
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="a72ca961-e04a-42c5-aeff-959566900d40">
+                            <SHORT-NAME>sint16</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="1b493400-4e31-4962-88a3-9b98db951c0e">
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="13004ea5-1271-4b2a-b620-671fae67847d">
+                            <SHORT-NAME>sint32</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Units</SHORT-NAME>
+                    <ELEMENTS>
+                        <UNIT UUID="a8a7c992-20ba-4aa0-afdd-bbb79cb3db85">
+                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                        </UNIT>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>Interfaces</SHORT-NAME>
+            <ELEMENTS>
+                <SENDER-RECEIVER-INTERFACE UUID="a8731695-0c3d-45ff-a07d-fd494dff873f">
+                    <SHORT-NAME>VeINP_CAN_PowerMode_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d028a75e-85aa-49a2-918c-4336d10f0d1f">
+                            <SHORT-NAME>VeINP_CAN_PowerMode_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5332c81a-fe8b-42fe-9a54-c2a64ef7d0e2">
+                    <SHORT-NAME>VbOUT_SP_FLDoorAjarSts_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4df3386e-3535-4313-bbd3-bc59934afaf5">
+                            <SHORT-NAME>VbOUT_SP_FLDoorAjarSts_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="532b0862-0c18-4e14-9feb-6aed0d065382">
+                    <SHORT-NAME>VbOUT_SP_RLDoorAjarSts_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="14e05a17-03b4-44cf-a415-1372bbce69ae">
+                            <SHORT-NAME>VbOUT_SP_RLDoorAjarSts_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8fc5fda8-1387-4e2b-814a-14b840f73359">
+                    <SHORT-NAME>VbINP_HWA_FLDoorButton_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="bbbf25b9-5990-41e3-b9b2-1e7503ba90c3">
+                            <SHORT-NAME>VbINP_HWA_FLDoorButton_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1ebbc580-8c9f-4e84-a587-7110663e7469">
+                    <SHORT-NAME>VbINP_HWA_RLDoorButton_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5b007635-1f3e-4bb0-a37d-3ecb0aa2f7c9">
+                            <SHORT-NAME>VbINP_HWA_RLDoorButton_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e64bf270-fdc7-46c2-b47b-d56df66138bb">
+                    <SHORT-NAME>VbINP_HWA_FLDoorHandleSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="94a723d8-8d28-4cd4-af65-84ba761f1452">
+                            <SHORT-NAME>VbINP_HWA_FLDoorHandleSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="076dc6a1-9bd2-4151-ba5d-79f5f3cb7c71">
+                    <SHORT-NAME>VbINP_HWA_RLDoorHandleSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="08802319-dcd8-4fea-bee2-eee7b9a5dc10">
+                            <SHORT-NAME>VbINP_HWA_RLDoorHandleSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="faed382a-010f-42b8-ac3f-a8d529038b8f">
+                    <SHORT-NAME>VmOUT_DLK_LockSrc_enum</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0f6039c2-b63d-4280-a24b-9ff5503cc47b">
+                            <SHORT-NAME>VmOUT_DLK_LockSrc_enum</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="75095cb3-9667-4f29-9493-25f6e801a49b">
+                    <SHORT-NAME>VbOUT_DLK_FLUnlock_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="631c4cd2-21aa-4ad4-a56c-4e4ca6d56f56">
+                            <SHORT-NAME>VbOUT_DLK_FLUnlock_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="24631cae-ba1a-48d9-86ec-fcab08def2a9">
+                    <SHORT-NAME>VbOUT_DLK_RLUnlock_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="93d8956f-067f-4954-be0c-75fb1d05fd48">
+                            <SHORT-NAME>VbOUT_DLK_RLUnlock_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b50da611-ad0a-45ee-b3f6-4032e29d0433">
+                    <SHORT-NAME>VeOUT_SP_EspVehSpd_kmh</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="63a224e4-77b6-4e57-a0b0-55d5e6ab7824">
+                            <SHORT-NAME>VeOUT_SP_EspVehSpd_kmh</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="373a14b5-8088-48f1-a5d6-efa25fdfc08a">
+                    <SHORT-NAME>VbINP_CAN_EspVehSpdVld_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5c72e19d-f613-4c78-868e-4ac18dde0a58">
+                            <SHORT-NAME>VbINP_CAN_EspVehSpdVld_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="90412b1c-fb7d-416f-a3ab-c91e41398c85">
+                    <SHORT-NAME>VbOUT_SP_CrashOutpSts_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="82e28576-ace8-4aa9-a1d2-dbd0a97d81be">
+                            <SHORT-NAME>VbOUT_SP_CrashOutpSts_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="deffa239-c687-469e-a29e-1a455a718715">
+                    <SHORT-NAME>VeINP_HWA_LRChildrenProtectSwitch_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f2b24721-1050-4b04-afcb-62871cd8292b">
+                            <SHORT-NAME>VeINP_HWA_LRChildrenProtectSwitch_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d46acd62-261e-419a-aba1-17b030b10c9a">
+                    <SHORT-NAME>VbOUT_HWA_FLDoorFullOpen_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="08358599-5b8e-4069-a1b9-541ad076acca">
+                            <SHORT-NAME>VbOUT_HWA_FLDoorFullOpen_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="028c36e1-2213-4582-abde-21e31a78dbf3">
+                    <SHORT-NAME>VbOUT_HWA_RLDoorFullOpen_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0731d921-00f6-4a4d-a7bf-37873dc4f0b0">
+                            <SHORT-NAME>VbOUT_HWA_RLDoorFullOpen_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4a1af0ca-d5b1-409f-b309-e0cd92d49d6c">
+                    <SHORT-NAME>VeOUT_DLK_LHFDoorLockSts_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="633dc672-91d5-4cf3-80c7-25d255b1bf6a">
+                            <SHORT-NAME>VeOUT_DLK_LHFDoorLockSts_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5e5a8219-80f9-44ba-b825-5cc2f2e8170d">
+                    <SHORT-NAME>VeOUT_DLK_LHRDoorLockSts_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="76a1bb13-148e-434b-a077-b5dcec0c61f8">
+                            <SHORT-NAME>VeOUT_DLK_LHRDoorLockSts_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="7fb9229e-e9b9-4ce4-9cf2-b08ce20e6be1">
+                    <SHORT-NAME>VbOUT_REL_FLLockReleaseInsdSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="62639972-8d92-44be-9873-3b845d4dbee0">
+                            <SHORT-NAME>VbOUT_REL_FLLockReleaseInsdSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="90649431-9009-4fc8-8e9a-5a6749b0becd">
+                    <SHORT-NAME>VbOUT_REL_FLLockReleaseOutsdSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="53905acf-eb3f-43f1-baac-2f349d62d52a">
+                            <SHORT-NAME>VbOUT_REL_FLLockReleaseOutsdSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9f5951bb-7f21-423d-9666-78fb8c84c94d">
+                    <SHORT-NAME>VbOUT_REL_FLDoorOpenSwitch_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7cc19cda-3768-4bf0-9295-dbe08c049b39">
+                            <SHORT-NAME>VbOUT_REL_FLDoorOpenSwitch_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e5a478b1-c16f-4177-9b67-09674f6907a2">
+                    <SHORT-NAME>VbOUT_REL_FLDoorAjarSwitch_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="2c2a20e6-b7d7-4712-8c4f-210f9164d42e">
+                            <SHORT-NAME>VbOUT_REL_FLDoorAjarSwitch_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cd0daedc-4be5-407a-97ed-b92bf9117e37">
+                    <SHORT-NAME>VeOUT_REL_FLReleaseLatchStatus_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="aaef05fc-fe41-4908-98a7-9a6de168ed39">
+                            <SHORT-NAME>VeOUT_REL_FLReleaseLatchStatus_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="aef9f5b4-67ce-4f75-a007-3ceb412935f3">
+                    <SHORT-NAME>VbOUT_REL_RLLockReleaseInsdSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="85565821-9d66-4e09-a718-70e2e93e1907">
+                            <SHORT-NAME>VbOUT_REL_RLLockReleaseInsdSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="032dcf31-def0-4f31-95f2-13fe06944655">
+                    <SHORT-NAME>VbOUT_REL_RLLockReleaseOutsdSW_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="90220a75-fba5-4ef1-b09c-0834874dd41a">
+                            <SHORT-NAME>VbOUT_REL_RLLockReleaseOutsdSW_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="19af2ef2-584f-4fb4-aef9-47d4b20898dd">
+                    <SHORT-NAME>VbOUT_REL_RLDoorOpenSwitch_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f29bce23-4f34-45a5-8c7d-0db20bf86c7b">
+                            <SHORT-NAME>VbOUT_REL_RLDoorOpenSwitch_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e1da76d7-a7c0-41a6-8ca2-6e75c1a43cef">
+                    <SHORT-NAME>VbOUT_REL_RLDoorAjarSwitch_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d642a108-92a0-49d3-9f21-cc52f3ad03f7">
+                            <SHORT-NAME>VbOUT_REL_RLDoorAjarSwitch_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5dea6796-488e-4226-a9f7-8e2893df6173">
+                    <SHORT-NAME>VeOUT_REL_RLChildrenProtectSwitch_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="2c481347-e866-4fc3-8faf-8a5cb6da05ba">
+                            <SHORT-NAME>VeOUT_REL_RLChildrenProtectSwitch_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="caadb701-75a9-461e-a694-97cd9102f5f0">
+                    <SHORT-NAME>VeOUT_REL_RLReleaseLatchStatus_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d73ad53b-7ba6-4a5c-9098-67607664462d">
+                            <SHORT-NAME>VeOUT_REL_RLReleaseLatchStatus_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0ddfc473-7bae-429d-b690-5c5f07aab61b">
+                    <SHORT-NAME>VeOUT_REL_HandleSwitchStsFL_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="83770083-5028-49f3-af92-348aae0b71f1">
+                            <SHORT-NAME>VeOUT_REL_HandleSwitchStsFL_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6d2a995d-22a0-4623-86f9-9377744b7ab1">
+                    <SHORT-NAME>VeOUT_REL_HandleSwitchStsRR_sig</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d7e1e086-ceba-4dcd-b822-418808b7bfd9">
+                            <SHORT-NAME>VeOUT_REL_HandleSwitchStsRR_sig</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/UInt8</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="56986f3f-b712-47a2-8671-4dc82d3aed89">
+                    <SHORT-NAME>VbOUT_REL_FLDoorMotorA_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="6fb787fa-8ff8-4dc5-8cdd-2d20c0b38c23">
+                            <SHORT-NAME>VbOUT_REL_FLDoorMotorA_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e7305ac3-de6f-403e-b538-9b93ad357dcd">
+                    <SHORT-NAME>VbOUT_REL_FLDoorMotorB_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="49a68a75-0c34-407a-8d85-40de7fe08f56">
+                            <SHORT-NAME>VbOUT_REL_FLDoorMotorB_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9c6a1963-b973-4aed-b54e-ec859ab8f0ff">
+                    <SHORT-NAME>VbOUT_REL_RLDoorMotorA_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b96230d9-6f5e-4959-8d63-23ccf6cd83a5">
+                            <SHORT-NAME>VbOUT_REL_RLDoorMotorA_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5bac5636-179e-41ae-87fd-d84657d71677">
+                    <SHORT-NAME>VbOUT_REL_RLDoorMotorB_flg</SHORT-NAME>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5356529e-425d-417a-aa80-1d0de8bb03da">
+                            <SHORT-NAME>VbOUT_REL_RLDoorMotorB_flg</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplicationDataTypes/Boolean</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
