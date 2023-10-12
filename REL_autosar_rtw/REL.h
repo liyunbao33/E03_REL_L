@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.142
+ * Model version                  : 1.4
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Sep 25 20:50:30 2023
+ * C/C++ source code generated on : Thu Oct 12 10:01:18 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -33,9 +33,9 @@ typedef struct {
   uint8 is_MainProgress;               /* '<S3>/FLDoorRlsDriver' */
   uint8 is_Release;                    /* '<S3>/FLDoorRlsDriver' */
   uint8 is_Step2_Open;                 /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_MainProgress_c;             /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_Release_a;                  /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_Step2_Open_f;               /* '<S3>/FLDoorRlsDriver' */
+  uint8 is_MainProgress_i;             /* '<S3>/FLDoorRlsDriver' */
+  uint8 is_Release_j;                  /* '<S3>/FLDoorRlsDriver' */
+  uint8 is_Step2_Open_g;               /* '<S3>/FLDoorRlsDriver' */
   uint8 SL_e_CycleCount;               /* '<S3>/FLDoorRlsDriver' */
   uint8 SL_e_DoorRlsDelayTime;         /* '<S3>/FLDoorRlsDriver' */
   boolean SO_b_DoorRlsReq_prev;        /* '<S3>/FLDoorRlsDriver' */
@@ -49,8 +49,8 @@ typedef struct {
   uint8 is_RlsReq;                     /* '<S3>/FLDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FLDoorRlsReq' */
   uint8 is_DoorLock;                   /* '<S3>/FLDoorRlsReq' */
-  uint8 is_RlsReq_i;                   /* '<S3>/FLDoorRlsReq' */
-  uint8 is_Trigger_p;                  /* '<S3>/FLDoorRlsReq' */
+  uint8 is_RlsReq_f;                   /* '<S3>/FLDoorRlsReq' */
+  uint8 is_Trigger_h;                  /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FLDoorRlsReq' */
@@ -67,7 +67,7 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   uint8 SO_e_DoorRlsDelayTime;         /* '<S3>/RLDoorRlsReq' */
-  uint8 SO_e_DoorRlsDelayTime_c;       /* '<S3>/FLDoorRlsReq' */
+  uint8 SO_e_DoorRlsDelayTime_b;       /* '<S3>/FLDoorRlsReq' */
   Boolean VbOUT_HWA_FLDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FLDoorFullOpen_flg_VbOUT_HWA_FLDoorFullOpen_flg_read' */
   Boolean VbOUT_SP_FLDoorAjarSts_flg_VbOU;
@@ -79,15 +79,15 @@ typedef struct tag_B_REL_T {
   boolean SO_b_DoorRlsReq;             /* '<S3>/RLDoorRlsReq' */
   boolean SO_b_MotorA;                 /* '<S3>/RLDoorRlsDriver' */
   boolean SO_b_MotorB;                 /* '<S3>/RLDoorRlsDriver' */
-  boolean SO_b_DoorRlsReq_l;           /* '<S3>/FLDoorRlsReq' */
-  boolean SO_b_MotorA_b;               /* '<S3>/FLDoorRlsDriver' */
-  boolean SO_b_MotorB_p;               /* '<S3>/FLDoorRlsDriver' */
+  boolean SO_b_DoorRlsReq_o;           /* '<S3>/FLDoorRlsReq' */
+  boolean SO_b_MotorA_m;               /* '<S3>/FLDoorRlsDriver' */
+  boolean SO_b_MotorB_d;               /* '<S3>/FLDoorRlsDriver' */
   boolean SL_b_FLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_FLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
   Mot_Cmd_E SO_e_MotorCmd;             /* '<S3>/RLDoorRlsDriver' */
-  Mot_Cmd_E SO_e_MotorCmd_j;           /* '<S3>/FLDoorRlsDriver' */
+  Mot_Cmd_E SO_e_MotorCmd_m;           /* '<S3>/FLDoorRlsDriver' */
 } B_REL_T;
 
 /* Block states (default storage) for system '<Root>' */
