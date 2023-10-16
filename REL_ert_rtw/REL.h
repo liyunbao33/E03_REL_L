@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.29
+ * Model version                  : 1.38
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Oct 16 17:53:04 2023
+ * C/C++ source code generated on : Mon Oct 16 23:16:09 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -49,6 +49,8 @@ typedef struct {
   uint8_T SL_e_DoorRlsDelayTime;       /* '<S3>/FLDoorRlsDriver' */
   boolean_T SO_b_DoorRlsReq_prev;      /* '<S3>/FLDoorRlsDriver' */
   boolean_T SO_b_DoorRlsReq_start;     /* '<S3>/FLDoorRlsDriver' */
+  boolean_T SI_b_ElecDoorCfg_prev;     /* '<S3>/FLDoorRlsDriver' */
+  boolean_T SI_b_ElecDoorCfg_start;    /* '<S3>/FLDoorRlsDriver' */
 } DW_FLDoorRlsDriver_REL_T;
 
 /* Block states (default storage) for system '<S3>/FLDoorRlsReq' */
@@ -72,14 +74,6 @@ typedef struct {
   boolean_T SL_b_DoorHndBtnValid_prev; /* '<S3>/FLDoorRlsReq' */
   boolean_T SL_b_DoorHndBtnValid_start;/* '<S3>/FLDoorRlsReq' */
 } DW_FLDoorRlsReq_REL_T;
-
-/* Block signals (default storage) */
-typedef struct {
-  uint8_T SO_e_DoorRlsDelayTime;       /* '<S3>/RLDoorRlsReq' */
-  uint8_T SO_e_DoorRlsDelayTime_b;     /* '<S3>/FLDoorRlsReq' */
-  boolean_T SO_b_Error;                /* '<S3>/RLDoorRlsDriver' */
-  boolean_T SO_b_Error_l;              /* '<S3>/FLDoorRlsDriver' */
-} B_REL_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
@@ -180,9 +174,6 @@ typedef struct {
 struct tag_RTM_REL_T {
   const char_T * volatile errorStatus;
 };
-
-/* Block signals (default storage) */
-extern B_REL_T REL_B;
 
 /* Block states (default storage) */
 extern DW_REL_T REL_DW;
