@@ -7,7 +7,7 @@
 %endfunction
 %function ChartDataMap(block, system) void
   %createrecord ChartDataElements {\
-    NumChartData   23 \
+    NumChartData   18 \
     ChartDataDefaults {\
       RecordType   "ChartData"\
       Dimensions   []\
@@ -49,13 +49,6 @@
       SrcLocation  ""\
     }\
     ChartData {\
-      Name         "is_SwValid"\
-      Description  "StateActiveChild"\
-      SFName       ""\
-      Path         "DoorHndBtn.SwValid"\
-      SrcLocation  ""\
-    }\
-    ChartData {\
       Name         "is_RlsReq"\
       Description  "StateActiveChild"\
       SFName       ""\
@@ -67,13 +60,6 @@
       Description  "StateActiveChild"\
       SFName       ""\
       Path         "DoorHndBtn.RlsReq.Trigger"\
-      SrcLocation  ""\
-    }\
-    ChartData {\
-      Name         "is_DoorLock"\
-      Description  "StateActiveChild"\
-      SFName       ""\
-      Path         "DoorHndBtn.RlsReq.Trigger.DoorLock"\
       SrcLocation  ""\
     }\
     ChartData {\
@@ -112,13 +98,6 @@
       SrcLocation  ""\
     }\
     ChartData {\
-      Name         "temporalCounter_i4"\
-      Description  "TemporalCounter"\
-      SFName       ""\
-      Path         ""\
-      SrcLocation  ""\
-    }\
-    ChartData {\
       Name         "SI_b_DoorInBtnSts_prev"\
       Description  "ChangeDetectionDoubleBuffer"\
       SFName       ""\
@@ -144,20 +123,6 @@
       Description  "ChangeDetectionDoubleBuffer"\
       SFName       ""\
       Path         "SL_b_DoorInBtnValid"\
-      SrcLocation  ""\
-    }\
-    ChartData {\
-      Name         "SI_b_DoorHndBtnSts_prev"\
-      Description  "ChangeDetectionDoubleBuffer"\
-      SFName       ""\
-      Path         "SI_b_DoorHndBtnSts"\
-      SrcLocation  ""\
-    }\
-    ChartData {\
-      Name         "SI_b_DoorHndBtnSts_start"\
-      Description  "ChangeDetectionDoubleBuffer"\
-      SFName       ""\
-      Path         "SI_b_DoorHndBtnSts"\
       SrcLocation  ""\
     }\
     ChartData {\

@@ -2,7 +2,7 @@
 ## Makefile generated for component 'REL'. 
 ## 
 ## Makefile     : REL.mk
-## Generated on : Mon Sep 25 19:05:26 2023
+## Generated on : Mon Oct 16 17:53:07 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/REL.exe
 ## Product type : executable
 ## 
@@ -155,7 +155,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STAN
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/REL_ert_rtw/REL.c $(START_DIR)/REL_ert_rtw/REL_data.c
+SRCS = $(START_DIR)/REL_ert_rtw/REL.c
 
 MAIN_SRC = $(START_DIR)/REL_ert_rtw/ert_main.c
 
@@ -165,7 +165,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = REL.obj REL_data.obj
+OBJS = REL.obj
 
 MAIN_OBJ = ert_main.obj
 
@@ -282,10 +282,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(MAIN_OBJ)
 
 
 REL.obj : $(START_DIR)/REL_ert_rtw/REL.c
-	$(CC) $(CFLAGS) -Fo"$@" $(subst /,\,"$<")
-
-
-REL_data.obj : $(START_DIR)/REL_ert_rtw/REL_data.c
 	$(CC) $(CFLAGS) -Fo"$@" $(subst /,\,"$<")
 
 

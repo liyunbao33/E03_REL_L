@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.4
+ * Model version                  : 1.28
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Thu Oct 12 10:01:18 2023
+ * C/C++ source code generated on : Mon Oct 16 17:41:26 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -67,7 +67,9 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   uint8 SO_e_DoorRlsDelayTime;         /* '<S3>/RLDoorRlsReq' */
+  uint8 SO_e_MotorCmd;                 /* '<S3>/RLDoorRlsDriver' */
   uint8 SO_e_DoorRlsDelayTime_b;       /* '<S3>/FLDoorRlsReq' */
+  uint8 SO_e_MotorCmd_k;               /* '<S3>/FLDoorRlsDriver' */
   Boolean VbOUT_HWA_FLDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FLDoorFullOpen_flg_VbOUT_HWA_FLDoorFullOpen_flg_read' */
   Boolean VbOUT_SP_FLDoorAjarSts_flg_VbOU;
@@ -77,17 +79,11 @@ typedef struct tag_B_REL_T {
   Boolean VbOUT_SP_RLDoorAjarSts_flg_VbOU;
          /* '<S2>/VbOUT_SP_RLDoorAjarSts_flg_VbOUT_SP_RLDoorAjarSts_flg_read' */
   boolean SO_b_DoorRlsReq;             /* '<S3>/RLDoorRlsReq' */
-  boolean SO_b_MotorA;                 /* '<S3>/RLDoorRlsDriver' */
-  boolean SO_b_MotorB;                 /* '<S3>/RLDoorRlsDriver' */
   boolean SO_b_DoorRlsReq_o;           /* '<S3>/FLDoorRlsReq' */
-  boolean SO_b_MotorA_m;               /* '<S3>/FLDoorRlsDriver' */
-  boolean SO_b_MotorB_d;               /* '<S3>/FLDoorRlsDriver' */
   boolean SL_b_FLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_FLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
-  Mot_Cmd_E SO_e_MotorCmd;             /* '<S3>/RLDoorRlsDriver' */
-  Mot_Cmd_E SO_e_MotorCmd_m;           /* '<S3>/FLDoorRlsDriver' */
 } B_REL_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -105,25 +101,19 @@ typedef struct tag_DW_REL_T {
   DW_FLDoorRlsDriver_REL_T sf_FLDoorRlsDriver;/* '<S3>/FLDoorRlsDriver' */
 } DW_REL_T;
 
-/* Invariant block signals (default storage) */
-typedef struct {
-  const HndPos_Sts_E DataTypeConversion15;/* '<S3>/Data Type Conversion15' */
-  const HndPos_Sts_E DataTypeConversion17;/* '<S3>/Data Type Conversion17' */
-  const Gear_Posn_E DataTypeConversion14;/* '<S3>/Data Type Conversion14' */
-} ConstB_REL_T;
-
 /* Block signals (default storage) */
 extern B_REL_T REL_B;
 
 /* Block states (default storage) */
 extern DW_REL_T REL_DW;
-extern const ConstB_REL_T REL_ConstB;  /* constant block i/o */
 
 /*-
  * These blocks were eliminated from the model due to optimizations:
  *
  * Block '<S3>/Data Type Conversion3' : Unused code path elimination
  * Block '<S3>/Data Type Conversion6' : Unused code path elimination
+ * Block '<S3>/Data Type Conversion10' : Eliminate redundant data type conversion
+ * Block '<S3>/Data Type Conversion8' : Eliminate redundant data type conversion
  */
 
 /*-
@@ -144,14 +134,18 @@ extern const ConstB_REL_T REL_ConstB;  /* constant block i/o */
  * '<S1>'   : 'REL/REL_Init'
  * '<S2>'   : 'REL/REL_Step_sys'
  * '<S3>'   : 'REL/REL_Step_sys/REL'
- * '<S4>'   : 'REL/REL_Step_sys/REL/DoorRatSts'
- * '<S5>'   : 'REL/REL_Step_sys/REL/DoorSwSts'
- * '<S6>'   : 'REL/REL_Step_sys/REL/FLDoorRlsDriver'
- * '<S7>'   : 'REL/REL_Step_sys/REL/FLDoorRlsReq'
- * '<S8>'   : 'REL/REL_Step_sys/REL/OFF '
- * '<S9>'   : 'REL/REL_Step_sys/REL/RLDoorRlsDriver'
- * '<S10>'  : 'REL/REL_Step_sys/REL/RLDoorRlsReq'
- * '<S11>'  : 'REL/REL_Step_sys/REL/Recycle Bin'
+ * '<S4>'   : 'REL/REL_Step_sys/REL/Compare To Constant'
+ * '<S5>'   : 'REL/REL_Step_sys/REL/Compare To Constant1'
+ * '<S6>'   : 'REL/REL_Step_sys/REL/Compare To Constant2'
+ * '<S7>'   : 'REL/REL_Step_sys/REL/Compare To Constant3'
+ * '<S8>'   : 'REL/REL_Step_sys/REL/DoorRatSts'
+ * '<S9>'   : 'REL/REL_Step_sys/REL/DoorSwSts'
+ * '<S10>'  : 'REL/REL_Step_sys/REL/FLDoorRlsDriver'
+ * '<S11>'  : 'REL/REL_Step_sys/REL/FLDoorRlsReq'
+ * '<S12>'  : 'REL/REL_Step_sys/REL/OFF '
+ * '<S13>'  : 'REL/REL_Step_sys/REL/RLDoorRlsDriver'
+ * '<S14>'  : 'REL/REL_Step_sys/REL/RLDoorRlsReq'
+ * '<S15>'  : 'REL/REL_Step_sys/REL/Recycle Bin'
  */
 #endif                                 /* RTW_HEADER_REL_h_ */
 
