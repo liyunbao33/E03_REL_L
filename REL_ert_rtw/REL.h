@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.39
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 17 13:32:14 2023
+ * C/C++ source code generated on : Tue Oct 17 14:32:49 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -47,10 +47,6 @@ typedef struct {
   uint8_T is_Step2_Open_g;             /* '<S3>/FLDoorRlsDriver' */
   uint8_T SL_e_CycleCount;             /* '<S3>/FLDoorRlsDriver' */
   uint8_T SL_e_DoorRlsDelayTime;       /* '<S3>/FLDoorRlsDriver' */
-  boolean_T SO_b_DoorRlsReq_prev;      /* '<S3>/FLDoorRlsDriver' */
-  boolean_T SO_b_DoorRlsReq_start;     /* '<S3>/FLDoorRlsDriver' */
-  boolean_T SI_b_ElecDoorCfg_prev;     /* '<S3>/FLDoorRlsDriver' */
-  boolean_T SI_b_ElecDoorCfg_start;    /* '<S3>/FLDoorRlsDriver' */
 } DW_FLDoorRlsDriver_REL_T;
 
 /* Block states (default storage) for system '<S3>/FLDoorRlsReq' */

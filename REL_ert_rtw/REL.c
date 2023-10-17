@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.39
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 17 13:32:14 2023
+ * C/C++ source code generated on : Tue Oct 17 14:32:49 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -76,9 +76,10 @@ RT_MODEL_REL_T *const REL_M = &REL_M_;
 
 /* Forward declaration for local functions */
 static real_T REL_GetPwm(real_T x, uint8_T rtu_SI_e_Volt100mV);
-static void REL_ElectricDoor(uint8_T rtu_SI_e_Volt100mV, Boolean
-  rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen, boolean_T rtu_SI_b_CinchHome,
-  uint8_T rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
+static void REL_ElectricDoor(uint8_T rtu_SI_e_Volt100mV, boolean_T
+  rtu_SO_b_DoorRlsReq, Boolean rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen,
+  boolean_T rtu_SI_b_CinchHome, boolean_T rtu_SI_b_ElecDoorCfg, uint8_T
+  rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
   *rty_SO_e_MotorPwm, boolean_T *rty_SO_b_Error, DW_FLDoorRlsDriver_REL_T
   *localDW);
 
@@ -101,14 +102,14 @@ static real_T REL_GetPwm(real_T x, uint8_T rtu_SI_e_Volt100mV)
 }
 
 /* Function for Chart: '<S3>/FLDoorRlsDriver' */
-static void REL_ElectricDoor(uint8_T rtu_SI_e_Volt100mV, Boolean
-  rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen, boolean_T rtu_SI_b_CinchHome,
-  uint8_T rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
+static void REL_ElectricDoor(uint8_T rtu_SI_e_Volt100mV, boolean_T
+  rtu_SO_b_DoorRlsReq, Boolean rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen,
+  boolean_T rtu_SI_b_CinchHome, boolean_T rtu_SI_b_ElecDoorCfg, uint8_T
+  rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
   *rty_SO_e_MotorPwm, boolean_T *rty_SO_b_Error, DW_FLDoorRlsDriver_REL_T
   *localDW)
 {
-  if ((localDW->SI_b_ElecDoorCfg_prev != localDW->SI_b_ElecDoorCfg_start) &&
-      (!localDW->SI_b_ElecDoorCfg_start)) {
+  if (!rtu_SI_b_ElecDoorCfg) {
     localDW->is_Step2_Open_g = REL_IN_NO_ACTIVE_CHILD;
     localDW->is_Release_j = REL_IN_NO_ACTIVE_CHILD;
     localDW->is_MainProgress_i = REL_IN_NO_ACTIVE_CHILD;
@@ -117,8 +118,7 @@ static void REL_ElectricDoor(uint8_T rtu_SI_e_Volt100mV, Boolean
     *rty_SO_e_MotorCmd = 0U;
     *rty_SO_e_MotorPwm = 0U;
   } else if (localDW->is_MainProgress_i == REL_IN_Idle) {
-    if ((localDW->SO_b_DoorRlsReq_prev != localDW->SO_b_DoorRlsReq_start) &&
-        localDW->SO_b_DoorRlsReq_start) {
+    if (rtu_SO_b_DoorRlsReq) {
       localDW->SL_e_DoorRlsDelayTime = rtu_SI_e_DoorRlsDelayTime;
       localDW->is_MainProgress_i = REL_IN_Release;
       localDW->SL_e_CycleCount = 0U;
@@ -363,15 +363,8 @@ void REL_FLDoorRlsDriver(uint8_T rtu_SI_e_Volt100mV, boolean_T
     localDW->temporalCounter_i1++;
   }
 
-  localDW->SO_b_DoorRlsReq_prev = localDW->SO_b_DoorRlsReq_start;
-  localDW->SO_b_DoorRlsReq_start = rtu_SO_b_DoorRlsReq;
-  localDW->SI_b_ElecDoorCfg_prev = localDW->SI_b_ElecDoorCfg_start;
-  localDW->SI_b_ElecDoorCfg_start = rtu_SI_b_ElecDoorCfg;
-
   /* Chart: '<S3>/FLDoorRlsDriver' */
   if (localDW->is_active_c19_DoorRlsDriver == 0U) {
-    localDW->SO_b_DoorRlsReq_prev = rtu_SO_b_DoorRlsReq;
-    localDW->SI_b_ElecDoorCfg_prev = rtu_SI_b_ElecDoorCfg;
     localDW->is_active_c19_DoorRlsDriver = 1U;
     localDW->is_c19_DoorRlsDriver = REL_IN_PowerOn;
     localDW->temporalCounter_i1 = 0U;
@@ -381,15 +374,14 @@ void REL_FLDoorRlsDriver(uint8_T rtu_SI_e_Volt100mV, boolean_T
     *rty_SO_e_MotorPwm = 100U;
   } else if (localDW->is_c19_DoorRlsDriver == REL_IN_Normal) {
     if (localDW->is_Normal == REL_IN_ElectricDoor) {
-      REL_ElectricDoor(rtu_SI_e_Volt100mV, rtu_SI_b_DoorAjar, rtu_SI_b_DoorOpen,
-                       rtu_SI_b_CinchHome, rtu_SI_e_DoorRlsDelayTime,
+      REL_ElectricDoor(rtu_SI_e_Volt100mV, rtu_SO_b_DoorRlsReq,
+                       rtu_SI_b_DoorAjar, rtu_SI_b_DoorOpen, rtu_SI_b_CinchHome,
+                       rtu_SI_b_ElecDoorCfg, rtu_SI_e_DoorRlsDelayTime,
                        rty_SO_e_MotorCmd, rty_SO_e_MotorPwm, rty_SO_b_Error,
                        localDW);
 
       /* case IN_NonElectricDoor: */
-    } else if ((localDW->SI_b_ElecDoorCfg_prev !=
-                localDW->SI_b_ElecDoorCfg_start) &&
-               localDW->SI_b_ElecDoorCfg_start) {
+    } else if (rtu_SI_b_ElecDoorCfg) {
       localDW->is_Step2_Open = REL_IN_NO_ACTIVE_CHILD;
       localDW->is_Release = REL_IN_NO_ACTIVE_CHILD;
       localDW->is_MainProgress = REL_IN_NO_ACTIVE_CHILD;
@@ -398,8 +390,7 @@ void REL_FLDoorRlsDriver(uint8_T rtu_SI_e_Volt100mV, boolean_T
       *rty_SO_e_MotorCmd = 0U;
       *rty_SO_e_MotorPwm = 0U;
     } else if (localDW->is_MainProgress == REL_IN_Idle) {
-      if ((localDW->SO_b_DoorRlsReq_prev != localDW->SO_b_DoorRlsReq_start) &&
-          localDW->SO_b_DoorRlsReq_start) {
+      if (rtu_SO_b_DoorRlsReq) {
         localDW->SL_e_DoorRlsDelayTime = rtu_SI_e_DoorRlsDelayTime;
         localDW->is_MainProgress = REL_IN_Release;
         localDW->SL_e_CycleCount = 0U;
