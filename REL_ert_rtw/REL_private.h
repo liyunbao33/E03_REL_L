@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.39
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 17 14:32:49 2023
+ * C/C++ source code generated on : Tue Oct 17 15:02:10 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -24,8 +24,7 @@ extern void REL_FLDoorRlsDriver_Init(uint8_T *rty_SO_e_MotorCmd, uint8_T
   *rty_SO_e_MotorPwm, boolean_T *rty_SO_b_Error);
 extern void REL_FLDoorRlsDriver(uint8_T rtu_SI_e_Volt100mV, boolean_T
   rtu_SO_b_DoorRlsReq, Boolean rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen,
-  boolean_T rtu_SI_b_CinchHome, boolean_T rtu_SI_b_ElecDoorCfg, uint8_T
-  rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
+  uint8_T rtu_SI_e_DoorRlsDelayTime, uint8_T *rty_SO_e_MotorCmd, uint8_T
   *rty_SO_e_MotorPwm, boolean_T *rty_SO_b_Error, DW_FLDoorRlsDriver_REL_T
   *localDW);
 extern void REL_FLDoorRlsReq_Init(boolean_T *rty_SO_b_DoorRlsReq, Unlock_Req_E
