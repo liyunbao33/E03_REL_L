@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.28
+ * Model version                  : 1.40
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Oct 16 17:41:26 2023
+ * C/C++ source code generated on : Tue Oct 17 15:23:17 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -29,17 +29,11 @@ typedef struct {
   uint16 temporalCounter_i1;           /* '<S3>/FLDoorRlsDriver' */
   uint8 is_active_c19_DoorRlsDriver;   /* '<S3>/FLDoorRlsDriver' */
   uint8 is_c19_DoorRlsDriver;          /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_Normal;                     /* '<S3>/FLDoorRlsDriver' */
   uint8 is_MainProgress;               /* '<S3>/FLDoorRlsDriver' */
   uint8 is_Release;                    /* '<S3>/FLDoorRlsDriver' */
   uint8 is_Step2_Open;                 /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_MainProgress_i;             /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_Release_j;                  /* '<S3>/FLDoorRlsDriver' */
-  uint8 is_Step2_Open_g;               /* '<S3>/FLDoorRlsDriver' */
   uint8 SL_e_CycleCount;               /* '<S3>/FLDoorRlsDriver' */
   uint8 SL_e_DoorRlsDelayTime;         /* '<S3>/FLDoorRlsDriver' */
-  boolean SO_b_DoorRlsReq_prev;        /* '<S3>/FLDoorRlsDriver' */
-  boolean SO_b_DoorRlsReq_start;       /* '<S3>/FLDoorRlsDriver' */
 } DW_FLDoorRlsDriver_REL_T;
 
 /* Block states (default storage) for system '<S3>/FLDoorRlsReq' */
@@ -66,9 +60,7 @@ typedef struct {
 
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
-  uint8 SO_e_DoorRlsDelayTime;         /* '<S3>/RLDoorRlsReq' */
   uint8 SO_e_MotorCmd;                 /* '<S3>/RLDoorRlsDriver' */
-  uint8 SO_e_DoorRlsDelayTime_b;       /* '<S3>/FLDoorRlsReq' */
   uint8 SO_e_MotorCmd_k;               /* '<S3>/FLDoorRlsDriver' */
   Boolean VbOUT_HWA_FLDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FLDoorFullOpen_flg_VbOUT_HWA_FLDoorFullOpen_flg_read' */

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model REL
-Model version                : 1.28
+Model version                : 1.40
 Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Oct 16 17:41:38 2023
-Model Checksum               : 2552041202 2556641616 3989409452 3143236543
+XML source code generated on : Tue Oct 17 15:23:25 2023
+Model Checksum               : 3699578783 2755001805 2757517865 1953996573
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
@@ -44,7 +44,7 @@ Model Checksum               : 2552041202 2556641616 3989409452 3143236543
                     <RESOURCE-CONSUMPTION>
                         <SHORT-NAME>RsrcCons_REL</SHORT-NAME>
                     </RESOURCE-CONSUMPTION>
-                    <SW-VERSION>1.28.1</SW-VERSION>
+                    <SW-VERSION>1.40.1</SW-VERSION>
                     <USED-CODE-GENERATOR>Embedded Coder 7.8 (R2022a) 23-Nov-2021</USED-CODE-GENERATOR>
                     <VENDOR-ID>0</VENDOR-ID>
                     <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/REL/REL</BEHAVIOR-REF>
