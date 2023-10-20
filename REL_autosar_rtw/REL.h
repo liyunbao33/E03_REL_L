@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.44
+ * Model version                  : 1.4
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Thu Oct 19 17:20:37 2023
+ * C/C++ source code generated on : Fri Oct 20 09:56:19 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -42,8 +42,8 @@ typedef struct {
   uint8 is_SwValid;                    /* '<S3>/FLDoorRlsReq' */
   uint8 is_RlsReq;                     /* '<S3>/FLDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FLDoorRlsReq' */
-  uint8 is_RlsReq_n;                   /* '<S3>/FLDoorRlsReq' */
-  uint8 is_Trigger_f;                  /* '<S3>/FLDoorRlsReq' */
+  uint8 is_RlsReq_h;                   /* '<S3>/FLDoorRlsReq' */
+  uint8 is_Trigger_b;                  /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FLDoorRlsReq' */
@@ -60,7 +60,7 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   uint8 SO_e_MotorCmd;                 /* '<S3>/RLDoorRlsDriver' */
-  uint8 SO_e_MotorCmd_k;               /* '<S3>/FLDoorRlsDriver' */
+  uint8 SO_e_MotorCmd_c;               /* '<S3>/FLDoorRlsDriver' */
   Boolean VbOUT_HWA_FLDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FLDoorFullOpen_flg_VbOUT_HWA_FLDoorFullOpen_flg_read' */
   Boolean VbOUT_SP_FLDoorAjarSts_flg_VbOU;
@@ -70,7 +70,7 @@ typedef struct tag_B_REL_T {
   Boolean VbOUT_SP_RLDoorAjarSts_flg_VbOU;
          /* '<S2>/VbOUT_SP_RLDoorAjarSts_flg_VbOUT_SP_RLDoorAjarSts_flg_read' */
   boolean SO_b_DoorRlsReq;             /* '<S3>/RLDoorRlsReq' */
-  boolean SO_b_DoorRlsReq_o;           /* '<S3>/FLDoorRlsReq' */
+  boolean SO_b_DoorRlsReq_e;           /* '<S3>/FLDoorRlsReq' */
   boolean SL_b_FLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_FLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */

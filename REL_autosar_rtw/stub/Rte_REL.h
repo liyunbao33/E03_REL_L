@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "19-Oct-2023 17:20:49"  */
+   File generated on: "20-Oct-2023 09:56:30"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -35,9 +35,10 @@ Std_ReturnType Rte_Write_VbOUT_REL_RLDoorRlsReq_flg_VbOUT_REL_RLDoorRlsReq_flg
 Std_ReturnType
   Rte_Invalidate_VbOUT_REL_RLDoorRlsReq_flg_VbOUT_REL_RLDoorRlsReq_flg(void);
 
-#define Rte_Read_VbINP_CAN_EspVehSpdVld_flg_VbINP_CAN_EspVehSpdVld_flg Rte_Read_REL_VbINP_CAN_EspVehSpdVld_flg_VbINP_CAN_EspVehSpdVld_flg
+#define Rte_Read_VbINP_CAN_VehicleSpeedValid_flg_VbINP_CAN_VehicleSpeedValid_flg Rte_Read_REL_VbINP_CAN_VehicleSpeedValid_flg_VbINP_CAN_VehicleSpeedValid_flg
 
-Std_ReturnType Rte_Read_VbINP_CAN_EspVehSpdVld_flg_VbINP_CAN_EspVehSpdVld_flg
+Std_ReturnType
+  Rte_Read_VbINP_CAN_VehicleSpeedValid_flg_VbINP_CAN_VehicleSpeedValid_flg
   (Boolean* u);
 
 #define Rte_Read_VbINP_HWA_FLDoorButton_flg_VbINP_HWA_FLDoorButton_flg Rte_Read_REL_VbINP_HWA_FLDoorButton_flg_VbINP_HWA_FLDoorButton_flg
