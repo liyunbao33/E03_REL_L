@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "26-Oct-2023 08:48:25"  */
+   File generated on: "01-Nov-2023 17:28:36"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -216,30 +216,6 @@ Std_ReturnType
 
 Std_ReturnType
   Rte_Invalidate_VeOUT_REL_RLChildrenProtectSwitch_sig_VeOUT_REL_RLChildrenProtectSwitch_sig
-  (void);
-
-#define Rte_Write_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig Rte_Write_REL_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig
-
-Std_ReturnType
-  Rte_Write_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig
-  (UInt8 u);
-
-#define Rte_Invalidate_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig Rte_Invalidate_REL_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig
-
-Std_ReturnType
-  Rte_Invalidate_VeOUT_REL_HandleSwitchStsFL_sig_VeOUT_REL_HandleSwitchStsFL_sig
-  (void);
-
-#define Rte_Write_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig Rte_Write_REL_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig
-
-Std_ReturnType
-  Rte_Write_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig
-  (UInt8 u);
-
-#define Rte_Invalidate_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig Rte_Invalidate_REL_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig
-
-Std_ReturnType
-  Rte_Invalidate_VeOUT_REL_HandleSwitchStsRR_sig_VeOUT_REL_HandleSwitchStsRR_sig
   (void);
 
 #define Rte_Write_VbOUT_REL_FLDoorRlsReq_flg_VbOUT_REL_FLDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_FLDoorRlsReq_flg_VbOUT_REL_FLDoorRlsReq_flg

@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.13
+ * Model version                  : 1.6
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Thu Oct 26 08:48:13 2023
+ * C/C++ source code generated on : Wed Nov  1 17:28:29 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -30,8 +30,8 @@ typedef struct {
   uint8 is_SwValid;                    /* '<S3>/FLDoorRlsReq' */
   uint8 is_RlsReq;                     /* '<S3>/FLDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FLDoorRlsReq' */
-  uint8 is_RlsReq_j;                   /* '<S3>/FLDoorRlsReq' */
-  uint8 is_Trigger_g;                  /* '<S3>/FLDoorRlsReq' */
+  uint8 is_RlsReq_e;                   /* '<S3>/FLDoorRlsReq' */
+  uint8 is_Trigger_j;                  /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FLDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FLDoorRlsReq' */
@@ -48,7 +48,7 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   boolean SO_b_DoorRlsReq;             /* '<S3>/RLDoorRlsReq' */
-  boolean SO_b_DoorRlsReq_n;           /* '<S3>/FLDoorRlsReq' */
+  boolean SO_b_DoorRlsReq_i;           /* '<S3>/FLDoorRlsReq' */
   boolean SL_b_FLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_RLDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SL_b_FLDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
