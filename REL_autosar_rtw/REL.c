@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.7
+ * Model version                  : 1.8
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Nov 27 14:16:16 2023
+ * C/C++ source code generated on : Mon Nov 27 14:36:19 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -84,10 +84,6 @@ void REL_FLDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
 
   if (localDW->temporalCounter_i3 < 63U) {
     localDW->temporalCounter_i3++;
-  }
-
-  if (localDW->temporalCounter_i4 < 7U) {
-    localDW->temporalCounter_i4++;
   }
 
   localDW->SI_b_DoorInBtnSts_prev = localDW->SI_b_DoorInBtnSts_start;
@@ -203,7 +199,6 @@ void REL_FLDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
           if (rtu_SI_m_DoorRatSts != Rat_Unlock) {
             localDW->is_DoorLock = REL_IN_NO_ACTIVE_CHILD;
             localDW->is_Trigger = REL_IN_Release;
-            localDW->temporalCounter_i3 = 0U;
             *rty_SO_b_DoorRlsReq = true;
           }
           break;
@@ -213,7 +208,6 @@ void REL_FLDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
        case REL_IN_DoorUnlock:
         if (rtu_SI_m_DoorRatSts != Rat_Unlock) {
           localDW->is_Trigger = REL_IN_Release;
-          localDW->temporalCounter_i3 = 0U;
           *rty_SO_b_DoorRlsReq = true;
         }
         break;
@@ -225,11 +219,8 @@ void REL_FLDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
 
        default:
         /* case IN_Release: */
-        if (localDW->temporalCounter_i3 >= 5) {
-          *rty_SO_b_DoorRlsReq = false;
-          localDW->is_Trigger = REL_IN_NO_ACTIVE_CHILD;
-          localDW->is_RlsReq = REL_IN_Idle;
-        }
+        localDW->is_Trigger = REL_IN_NO_ACTIVE_CHILD;
+        localDW->is_RlsReq = REL_IN_Idle;
         break;
       }
     }
@@ -253,13 +244,10 @@ void REL_FLDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
     } else if (localDW->is_Trigger_a == REL_IN_DoorUnlock_k) {
       if (rtu_SI_m_DoorRatSts != Rat_Unlock) {
         localDW->is_Trigger_a = REL_IN_Release_d;
-        localDW->temporalCounter_i4 = 0U;
         *rty_SO_b_DoorRlsReq = true;
       }
-
+    } else {
       /* case IN_Release: */
-    } else if (localDW->temporalCounter_i4 >= 5) {
-      *rty_SO_b_DoorRlsReq = false;
       localDW->is_Trigger_a = REL_IN_NO_ACTIVE_CHILD;
       localDW->is_RlsReq_c = REL_IN_Idle;
     }
